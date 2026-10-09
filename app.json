@@ -1,0 +1,54 @@
+{
+  "expo": {
+    "name": "Isebe",
+    "slug": "isebe-mobile",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "scheme": "isebe",
+    "userInterfaceStyle": "light",
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/splash-icon.png",
+          "imageWidth": 160,
+          "backgroundColor": "#FFFAF7"
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Isebe needs access to your photos so you can upload menu and blog images."
+        }
+      ]
+    ],
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "ng.isebe.app"
+    },
+    "android": {
+      "package": "ng.isebe.app",
+      "adaptiveIcon": {
+        "backgroundColor": "#FFFAF7",
+        "foregroundImage": "./assets/android-icon-foreground.png"
+      },
+      "predictiveBackGestureEnabled": false,
+      "permissions": [
+        "android.permission.RECORD_AUDIO"
+      ]
+    },
+    "web": {
+      "bundler": "metro",
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "f0bff859-de5b-4bc8-8669-fe8d0818a1a8"
+      }
+    },
+    "owner": "bakareferanmi"
+  }
+}
